@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ゲーム音楽 4択クイズ</title>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --card: #111826;
+        --text: #e6edf3;
+        --muted: #9fb1c3;
+        --accent: #3b82f6;
+        --ok: #22c55e;
+        --bad: #ef4444;
+        --warn: #f59e0b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial;
+        background: linear-gradient(180deg, #0b0f14, #0a1220 40%, #0b0f14);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        transform: scale(1.25);
+        transform-origin: center center;
+        overflow: hidden;
+      }
+      .wrap {
+        width: min(920px, 92vw);
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: clamp(18px, 3.2vw, 28px);
+        margin: 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid #1f2a3a;
+        border-radius: 18px;
+        padding: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        min-width: 880px;
+        min-height: 385px;
+        display: flex;
+        flex-direction: column;
+      }
+      .row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .grow {
+        flex: 1;
+      }
+      .btn {
+        appearance: none;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 16px;
+        background: #1b2636;
+        color: var(--text);
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.15s transform, 0.2s background, 0.2s box-shadow;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+      .btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: white;
+      }
+      .btn.ok {
+        background: var(--ok);
+      }
+      .btn.bad {
+        background: var(--bad);
+      }
+      .btn.warn {
+        background: var(--warn);
+      }
+      .choices {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 16px;
+      }
+      @media (max-width: 640px) {
+        .choices {
+          grid-template-columns: 1fr;
+        }
+      }
+      .choice {
+        font-size: 15px;
+        background: #152033;
+        border: 1px solid #203047;
+        border-radius: 14px;
+        padding: 14px;
+        text-align: left;
+      }
+      .choice.correct {
+        background: rgba(34, 197, 94, 0.15);
+        border-color: var(--ok);
+      }
+      .choice.wrong {
+        background: rgba(239, 68, 68, 0.12);
+        border-color: var(--bad);
+      }
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 999px;
+        padding: 6px 10px;
+        background: #122036;
+        border: 1px solid #22324a;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .score {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .hide {
+        display: none !important;
+      }
+      audio {
+        width: 100%;
+        margin-top: 8px;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-top: auto;
+        border-top: 1px solid #444;
+        padding-top: 15px;
+        text-align: center;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .trackname {
+        font-weight: 600;
+      }
+      .hint {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .answer {
+        margin-top: 10px;
+        font-weight: 600;
+        color: var(--ok);
+      }
+      .trackname {
+        margin: 5px;
+      }
+      .trackname.playing {
+        animation: beatSway 0.7s infinite ease-in-out,
+          colorPulse 1.8s infinite linear;
+        display: inline-block;
+      }
+
+      @keyframes beatSway {
+        0%,
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        25% {
+          transform: translate(-6px, -3px) rotate(-4deg);
+        }
+        50% {
+          transform: translate(0, 2px) rotate(0deg);
+        }
+        75% {
+          transform: translate(6px, -3px) rotate(4deg);
+        }
+      }
+      @keyframes colorPulse {
+        0% {
+          color: #3b82f6;
+        } /* 青 */
+        25% {
+          color: #22c55e;
+        } /* 緑 */
+        50% {
+          color: #f59e0b;
+        } /* オレンジ */
+        75% {
+          color: #ef4444;
+        } /* 赤 */
+        100% {
+          color: #3b82f6;
+        } /* 青に戻る */
+      }
+      .card-content {
+        flex: 1; /* 中身が伸び縮みしてもOK */
+      }
+      .footer .row {
+        margin: 5px 0;
+      }
+
+      .fly-image {
+        position: fixed;
+        max-width: 100px;
+        height: 100px;
+        pointer-events: none;
+        z-index: 9999;
+        animation: spin 3s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>♪ ゲーム音楽 4択クイズ</h1>
+        <div class="score">
+          <span class="pill" id="progressPill">0 / 0</span>
+          <span class="pill" id="streakPill">連続正解: 0</span>
+          <span class="pill" id="bestPill">ベスト: 0</span>
+        </div>
+      </header>
+
+      <section class="card" id="gameCard">
+        <div class="row">
+          <div class="grow">
+            <div class="meta">問題<span id="qIndex"></span></div>
+            <div class="trackname" id="trackTitle">再生を開始してください</div>
+            <div class="hint">
+              選択肢は「ゲームタイトル」です。音楽だけで当ててみよう！
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn" id="btnPlay" disabled>再生▶</button>
+            <button class="btn" id="btnPause" disabled>一時停止⏸</button>
+            <button class="btn warn" id="btnReveal" disabled>答えを見る</button>
+          </div>
+        </div>
+        <audio id="player" preload="auto" controls class="hide"></audio>
+
+        <div class="choices" id="choices"></div>
+
+        <div
+          class="answer hide"
+          id="answerBox"
+          style="white-space: pre-wrap; word-wrap: break-word"
+        ></div>
+
+        <div class="footer">
+          <div class="row">
+            <button class="btn" id="btnPrev" disabled hidden>← 前の曲</button>
+            <button class="btn primary" id="btnNext" disabled>次の曲 →</button>
+          </div>
+          <div class="row">
+            <button class="btn" id="btnStart">ゲーム開始</button>
+            <button class="btn" id="btnShuffle" hidden>曲順シャッフル</button>
+            <button class="btn" id="btnRestart" disabled>最初から</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- <p class="muted" style="margin-top:10px">データはスクリプト内の <code>TRACKS</code> を編集してください。（例: ゲームタイトル/曲タイトル/ファイルパス）</p> -->
+    </div>
+
+    <script>
+      let tention = 0.01;
+      let TRACKS = [];
+
+      async function loadTracks() {
+        const res = await fetch("tracks.json");
+        TRACKS = await res.json();
+      }
+
+      loadTracks();
+
+      const qs = (sel, el = document) => el.querySelector(sel);
+      const qsa = (sel, el = document) => [...el.querySelectorAll(sel)];
+      const shuffle = (arr) =>
+        arr
+          .map((v) => [Math.random(), v])
+          .sort((a, b) => a[0] - b[0])
+          .map((v) => v[1]);
+      const uniq = (arr) => [...new Set(arr)];
+
+      function sampleUnique(arr, count, exclude) {
+        const pool = arr.filter((v) => !exclude.has(v));
+        return shuffle(pool).slice(0, count);
+      }
+
+      let order = [];
+      let index = -1;
+      let answered = false;
+      let score = 0;
+      let streak = 0;
+      let best = Number(localStorage.getItem("bgm-quiz-best") || 0);
+
+      const el = {
+        player: qs("#player"),
+        btnPlay: qs("#btnPlay"),
+        btnPause: qs("#btnPause"),
+        btnReveal: qs("#btnReveal"),
+        btnPrev: qs("#btnPrev"),
+        btnNext: qs("#btnNext"),
+        btnStart: qs("#btnStart"),
+        btnShuffle: qs("#btnShuffle"),
+        btnRestart: qs("#btnRestart"),
+        choices: qs("#choices"),
+        qIndex: qs("#qIndex"),
+        trackTitle: qs("#trackTitle"),
+        progressPill: qs("#progressPill"),
+        streakPill: qs("#streakPill"),
+        bestPill: qs("#bestPill"),
+        answerBox: qs("#answerBox"),
+      };
+
+      function init() {
+        order = shuffle([...TRACKS.keys()]);
+        index = -1;
+        score = 0;
+        streak = 0;
+        answered = false;
+        updatePills();
+        el.bestPill.textContent = `ベスト: ${best}`;
+        next();
+      }
+
+      function updatePills() {
+        el.progressPill.textContent = `${Math.max(0, index)}/${TRACKS.length}`;
+        el.streakPill.textContent = `連続正解: ${streak}`;
+      }
+
+      function load(i) {
+        const t = TRACKS[i];
+        el.qIndex.textContent = ``;
+        el.trackTitle.textContent = `♪ 再生中`;
+        el.trackTitle.classList.add("playing"); // ← 再生開始時に追加
+        el.player.src = t.src;
+        el.player.volume = t.volume || 0.5;
+        el.player.currentTime = 0;
+        answered = false;
+        el.btnReveal.disabled = false;
+        el.btnRestart.disabled = false;
+        el.btnNext.disabled = true;
+        el.btnPrev.disabled = i <= 0;
+        el.answerBox.classList.add("hide");
+        renderChoices(t);
+        updatePills();
+      }
+
+      // 🎶 再生したらノリノリ開始
+      el.player.addEventListener("play", () => {
+        el.trackTitle.classList.add("playing");
+      });
+
+      // 再生が止まったときにノリノリを解除
+      el.player.addEventListener("pause", () => {
+        el.trackTitle.classList.remove("playing");
+      });
+      el.player.addEventListener("ended", () => {
+        el.trackTitle.classList.remove("playing");
+      });
+
+      function renderChoices(correctTrack) {
+        el.choices.innerHTML = "";
+        const allGames = uniq(TRACKS.map((t) => t.game));
+        const exclude = new Set([correctTrack.game]);
+        const others = sampleUnique(allGames, 3, exclude);
+        const items = shuffle([correctTrack.game, ...others]);
+
+        for (const gameTitle of items) {
+          const btn = document.createElement("button");
+          btn.className = "btn choice";
+          btn.textContent = gameTitle;
+          btn.onclick = () => choose(gameTitle, correctTrack, btn);
+          el.choices.appendChild(btn);
+        }
+      }
+
+      function choose(selected, correctTrack, btnEl) {
+        if (answered) return;
+        answered = true;
+        qsa(".choice").forEach((b) => (b.disabled = true));
+        const correctBtn = qsa(".choice").find(
+          (b) => b.textContent === correctTrack.game
+        );
+
+        if (selected === correctTrack.game) {
+          btnEl.classList.add("correct");
+          el.btnNext.classList.add("ok");
+          streak++;
+          score++;
+          tention = tention + 0.01;
+          if (streak > best) {
+            best = streak;
+            localStorage.setItem("bgm-quiz-best", String(best));
+          }
+          el.answerBox.textContent = `正解！\r\nゲーム：${correctTrack.game}\r\n曲名 ：${correctTrack.title}`;
+          el.answerBox.classList.remove("hide");
+        } else {
+          btnEl.classList.add("wrong");
+          if (correctBtn) correctBtn.classList.add("correct");
+          el.btnNext.classList.add("bad");
+          streak = 0;
+        }
+        el.btnNext.disabled = false;
+        updatePills();
+      }
+
+      function reveal() {
+        if (answered) return;
+        answered = true;
+        const correctTrack = TRACKS[order[index]];
+        qsa(".choice").forEach((b) => {
+          b.disabled = true;
+          if (b.textContent === correctTrack.game) b.classList.add("correct");
+        });
+        el.btnNext.disabled = false;
+        el.btnNext.classList.remove("ok", "bad");
+        el.btnNext.classList.add("warn");
+        streak = 0;
+        el.answerBox.textContent = `答え\r\nゲーム：${correctTrack.game}\r\n曲名 ：${correctTrack.title}`;
+        el.answerBox.classList.remove("hide");
+        updatePills();
+      }
+
+      function next() {
+        el.btnNext.classList.remove("ok", "bad", "warn");
+        index++;
+        if (index >= order.length) {
+          order = shuffle([...TRACKS.keys()]);
+          index = 0;
+        }
+        load(order[index]);
+        el.player.play().catch(() => {});
+        el.btnPause.disabled = false;
+        el.btnPlay.disabled = true;
+      }
+
+      function prev() {
+        if (index <= 0) return;
+        el.btnNext.classList.remove("ok", "bad", "warn");
+        index--;
+        load(order[index]);
+        el.player.play().catch(() => {});
+        el.btnPause.disabled = false;
+        el.btnPlay.disabled = true;
+      }
+
+      el.btnStart.addEventListener("click", () => {
+        init();
+        el.btnStart.disabled = true;
+      });
+      el.btnShuffle.addEventListener("click", () => {
+        order = shuffle([...TRACKS.keys()]);
+        index = -1;
+        next();
+      });
+      el.btnRestart.addEventListener("click", () => {
+        init();
+      });
+
+      el.btnPlay.addEventListener("click", () => {
+        el.player.play();
+        el.btnPlay.disabled = true;
+        el.btnPause.disabled = false;
+      });
+      el.btnPause.addEventListener("click", () => {
+        el.player.pause();
+        el.btnPause.disabled = true;
+        el.btnPlay.disabled = false;
+      });
+
+      el.btnNext.addEventListener("click", next);
+      el.btnPrev.addEventListener("click", prev);
+      el.btnReveal.addEventListener("click", reveal);
+
+      window.addEventListener("keydown", (e) => {
+        if (e.code === "Space") {
+          e.preventDefault();
+          if (el.player.paused) el.btnPlay.click();
+          else el.btnPause.click();
+        }
+        if (e.key.toLowerCase() === "n") el.btnNext.click();
+        if (e.key.toLowerCase() === "p") el.btnPrev.click();
+        if (/^[1-4]$/.test(e.key)) {
+          const idx = Number(e.key) - 1;
+          const b = qsa(".choice")[idx];
+          if (b) b.click();
+        }
+      });
+
+      el.progressPill.textContent = `0 / ${TRACKS.length}`;
+
+      let FLY_IMAGES = [];
+
+      // 画像リストをロード
+      async function loadImages() {
+        const res = await fetch("images.json");
+        FLY_IMAGES = await res.json();
+      }
+      loadImages();
+
+      function spawnFlyingImage() {
+        if (FLY_IMAGES.length === 0) return;
+
+        const img = document.createElement("img");
+        img.src = FLY_IMAGES[Math.floor(Math.random() * FLY_IMAGES.length)];
+        img.className = "fly-image";
+
+        const side = ["left", "right", "top", "bottom"][
+          Math.floor(Math.random() * 4)
+        ];
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const offset = 100;
+
+        let startX, startY, endX, endY;
+
+        if (side === "left") {
+          startX = -offset;
+          startY = Math.random() * vh;
+          endX = vw + offset;
+          endY = Math.random() * vh;
+        } else if (side === "right") {
+          startX = vw + offset;
+          startY = Math.random() * vh;
+          endX = -offset;
+          endY = Math.random() * vh;
+        } else if (side === "top") {
+          startX = Math.random() * vw;
+          startY = -offset;
+          endX = Math.random() * vw;
+          endY = vh + offset;
+        } else {
+          startX = Math.random() * vw;
+          startY = vh + offset;
+          endX = Math.random() * vw;
+          endY = -offset;
+        }
+
+        img.style.left = startX + "px";
+        img.style.top = startY + "px";
+
+        document.body.appendChild(img);
+
+        // 🔹 移動時間（6〜12秒）
+        const duration = Math.random() * 6000 + 6000; // ms
+
+        // 🔹 回転速度（30〜1200度/秒）
+        const speed = Math.random() * (-100 + -10) - 10; // deg/s
+
+        // 🔹 最終的な回転角度
+        const angle = speed * (duration / 1000);
+
+        img.animate(
+          [
+            { transform: `translate(0,0) rotate(0deg)` },
+            {
+              transform: `translate(${endX - startX}px, ${
+                endY - startY
+              }px) rotate(${angle}deg)`,
+            },
+          ],
+          {
+            duration,
+            easing: "linear",
+          }
+        ).onfinish = () => img.remove();
+      }
+
+      setInterval(() => {
+        if (Math.random() < tention) {
+          spawnFlyingImage();
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

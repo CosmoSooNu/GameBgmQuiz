@@ -1,0 +1,500 @@
+[
+  {
+    "game": "真・三國無双 2",
+    "title": "行軍 -ARENA-",
+    "src": "audio/ARENA.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "真・三國無双 4",
+    "title": "合肥の戦い -Great Red Spirit-",
+    "src": "audio/Great Red Spirit.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ポケットモンスター プラチナ",
+    "title": "戦闘！ギラティナ",
+    "src": "audio/Battle! (Giratina).mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ポケットモンスター X・Y",
+    "title": "戦闘！フレア団",
+    "src": "audio/Battle! (Team Flare).mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ポケットモンスター サン・ムーン",
+    "title": "戦闘！スカル団幹部",
+    "src": "audio/Battle! (Team Skull Admin).mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "ポケットモンスター スカーレット・バイオレット",
+    "title": "戦闘！ペパー",
+    "src": "audio/Battle! (Arven).mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "戦国無双 3",
+    "title": "桜花 -小牧長久手-",
+    "src": "audio/Cherry Blossom -Komaki-Nagakute-.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "マリオストーリー",
+    "title": "Petunia Under Attack!",
+    "src": "audio/Petunia Under Attack!.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "逆転裁判 3",
+    "title": "追求～とっつかまえて",
+    "src": "audio/Pursuit - Catch the Culprit.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "逆転検事 2",
+    "title": "追求～つきとめたくて",
+    "src": "audio/Pursuit - Uncover the Truth.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "星のカービィ64",
+    "title": "ボス",
+    "src": "audio/Boss.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "星のカービィ ウルトラスーパーデラックス",
+    "title": "マスクド・デデデのテーマ",
+    "src": "audio/Masked Dedede's Theme.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "リズム天国ゴールド",
+    "title": "リミックス8",
+    "src": "audio/Remix 8.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "みんなのリズム天国",
+    "title": "リミックス10",
+    "src": "audio/Remix 10.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "がんばれゴエモン～でろでろ道中オバケてんこ盛り～",
+    "title": "亀上的竜宮生活",
+    "src": "audio/At the Ryugu Daily Life on Turtle Back.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "スーパーマリオサンシャイン",
+    "title": "ヒミツコース",
+    "src": "audio/Secret Course.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "スーパーマリオギャラクシー",
+    "title": "パープルコメット",
+    "src": "audio/Purple Comet.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "スーパーマリオギャラクシー2",
+    "title": "かくざいもくざい",
+    "src": "audio/Puzzle Plank Galaxy.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "UNDERTALE",
+    "title": "Spider Dance",
+    "src": "audio/Spider Dance.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "DELTARUNE",
+    "title": "THE WORLD REVOLVING",
+    "src": "audio/THE WORLD REVOLVING.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "実況パワフルプロ野球 2011",
+    "title": "夏の甲子園決勝",
+    "src": "audio/KOUSIEN.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "実況パワフルプロ野球 2016",
+    "title": "パワフェス：決勝戦",
+    "src": "audio/2016_SK.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "スーパードンキーコング 2",
+    "title": "どくろコースター",
+    "src": "audio/Disco Train.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "東方永夜抄",
+    "title": "蠢々秋月～Mooned Insect",
+    "src": "audio/Mooned Insect.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "東方風神録",
+    "title": "神々が恋した幻想郷",
+    "src": "audio/The Gensokyo the Gods Loved.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "ダンガンロンパ",
+    "title": "議論-BREAK-",
+    "src": "audio/Debate -BREAK-.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ライブ・ア・ライブ",
+    "title": "MEGALOMANIA",
+    "src": "audio/MEGALOMANIA.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "雀魂",
+    "title": "真剣勝負-8bit version",
+    "src": "audio/Liqi 8bit.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "アクトレイザー",
+    "title": "フィルモア",
+    "src": "audio/フィルモア.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "Detroit: Become Human",
+    "title": "Now",
+    "src": "audio/Now.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ゼルダの伝説 時のオカリナ",
+    "title": "ゲルドの谷",
+    "src": "audio/Gerudo Valley.mp3",
+    "volume": 1.0
+  },
+  {
+    "game": "ゼルダの伝説 ムジュラの仮面",
+    "title": "デクナッツの城",
+    "src": "audio/Deku Palace.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ゼルダの伝説 風のタクト",
+    "title": "モルド・ゲイラ",
+    "src": "audio/Molgera.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ゼルダの伝説 ブレス オブ ザ ワイルド",
+    "title": "イワロック戦",
+    "src": "audio/Talus Battle.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ポケモン不思議のダンジョン 時の探検隊・闇の探検隊",
+    "title": "ずっと わすれない……",
+    "src": "audio/Farther Away.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ポケモン不思議のダンジョン 空の探検隊",
+    "title": "あさひのなかで",
+    "src": "audio/In the Morning Sun.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "カエルの為に鐘は鳴る",
+    "title": "王子の冒険",
+    "src": "audio/The Prince's Adventure.mp3",
+    "volume": 0.8
+  },
+  {
+    "game": "パラノマサイト FILE23 本所七不思議",
+    "title": "Crime Busting With a Smile!",
+    "src": "audio/Crime Busting With a Smile!.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "ごきんじょ冒険隊",
+    "title": "通常戦闘",
+    "src": "audio/GB_Battle.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "スーパーマリオRPG",
+    "title": "対 武器ボス戦",
+    "src": "audio/Fight Against an Armed Boss.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "DEEMO",
+    "title": "Saika",
+    "src": "audio/Saika.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ビブリボン",
+    "title": "Going On",
+    "src": "audio/Going On.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "塊魂",
+    "title": "Wanda Wanda",
+    "src": "audio/Wanda Wanda.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "大乱闘スマッシュブラザーズ64",
+    "title": "メタ・クリスタル",
+    "src": "audio/Meta Crystal.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "大乱闘スマッシュブラザーズDX",
+    "title": "ターゲットをこわせ!",
+    "src": "audio/Break the Targets.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ワリオランド3 不思議なオルゴール",
+    "title": "スタッフロール",
+    "src": "audio/WR3_Credits.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "怪盗ワリオ・ザ・セブン",
+    "title": "VS.カルパッチョ",
+    "src": "audio/Head Honcho, Carpaccio.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "クラシックダンジョン～扶翼の魔装陣～",
+    "title": "風を切って",
+    "src": "audio/Slicing the Wind.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ぷよぷよ!! 20th anniversary",
+    "title": "Last from Puyopuyo2",
+    "src": "audio/Last from Puyo Puyo.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "洞窟物語",
+    "title": "つきのうた",
+    "src": "audio/つきのうた.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "天国の塔",
+    "title": "Luna Ascension",
+    "src": "audio/Luna Ascension.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "風来のシレン6 とぐろ島探検録",
+    "title": "特殊モンスターハウス",
+    "src": "audio/Special Monster House.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "ドラゴンクエスト8 空と海と大地と呪われし姫君",
+    "title": "おおぞらに戦う",
+    "src": "audio/Battle in the Heavens.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "幻想水滸伝II",
+    "title": "Gothic Neclord",
+    "src": "audio/Gothic Neclord.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "マリオカート64",
+    "title": "チョコマウンテン",
+    "src": "audio/Choco Mountain.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "マリオカート ダブルダッシュ!!",
+    "title": "レインボーロード",
+    "src": "audio/DD_Rainbow Road.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "マリオカートDS",
+    "title": "ワルイージピンボール",
+    "src": "audio/DS Waluigi Pinball.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "マリオカートWii",
+    "title": "ココナッツモール",
+    "src": "audio/Coconut Mall.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "学校であった怖い話",
+    "title": "新堂誠",
+    "src": "audio/Shindo Makoto.mp3",
+    "volume": 0.65
+  },
+  {
+    "game": "エストポリス伝記II",
+    "title": "バトル#3",
+    "src": "audio/Battle theme 3.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "トライアングルストラテジー",
+    "title": "Combat-宿命-",
+    "src": "audio/Combat -Destiny-.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "ヨッシーストーリー",
+    "title": "Yo-Yo-Yoshi！",
+    "src": "audio/Yo-Yo-Yoshi!.mp3",
+    "volume": 1.0
+  },
+  {
+    "game": "ロックマンX6",
+    "title": "Commander Yammark Stage",
+    "src": "audio/Commander Yammark Stage.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "勇者のくせになまいきだ。",
+    "title": "魔王を守れのテーマ",
+    "src": "audio/yuunama1.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "勇者のくせになまいきだ:3D",
+    "title": "来たるべきセカイ",
+    "src": "audio/yuunama3d.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "勇者30",
+    "title": "カサブランカ",
+    "src": "audio/Casablanca.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "ファイアーエムブレム 覚醒",
+    "title": "遠征～炎",
+    "src": "audio/遠征_炎.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "ソニックマニア",
+    "title": "Lights, Camera, Action!",
+    "src": "audio/Studiopolis_Act_1.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "クリプト・オブ・ネクロダンサー",
+    "title": "Konga Conga Kappa",
+    "src": "audio/Konga Conga Kappa.mp3",
+    "volume": 0.45
+  },
+  {
+    "game": "ルイージマンション",
+    "title": "トレーニング：後半",
+    "src": "audio/lm_Training.mp3",
+    "volume": 1.0
+  },
+  {
+    "game": "ワンス・アポン・ア・塊魂",
+    "title": "カタマリイズム",
+    "src": "audio/Katamariism (instrumental version).mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ファンタジーゾーン",
+    "title": "Opa-Opa!",
+    "src": "audio/Opa-Opa!.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "スーパーボンバーマン2",
+    "title": "BATTLE",
+    "src": "audio/sbm2-BATTLE.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "メゾン・ド・魔王",
+    "title": "カニバル☆ラヴ",
+    "src": "audio/Carnival☆Love.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "メイドイン俺",
+    "title": "みわくのバディライン",
+    "src": "audio/Body Rock.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "みんな大好き塊魂",
+    "title": "塊オンザロック",
+    "src": "audio/塊オンザロック.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "moon",
+    "title": "KERA-MA-GO",
+    "src": "audio/KERA MA GO.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "いかちゃん",
+    "title": "いかちゃん",
+    "src": "audio/Ikachan.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "遊☆戯☆王ファイブディーズ タッグフォース5",
+    "title": "Towards The Light",
+    "src": "audio/Towards The Light.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "メイドインワリオ",
+    "title": "声の漂う波間まで",
+    "src": "audio/声の漂う波間まで.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "さわるメイドインワリオ",
+    "title": "マイクがスキ☆スキ",
+    "src": "audio/Mike's Song.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ONE PIECE グランドバトル!2",
+    "title": "Happiness Carillon",
+    "src": "audio/Happiness Carillon.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "憂世ノ志士",
+    "title": "KABUKI CHANBARA -引導-",
+    "src": "audio/KABUKI CHANBARA -Final Words-.mp3",
+    "volume": 0.35
+  }
+]
