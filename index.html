@@ -359,7 +359,9 @@
       }
 
       function updatePills() {
-        el.progressPill.textContent = `${Math.max(0, index)}/${TRACKS.length}`;
+        el.progressPill.textContent = `${Math.max(0, index + 1)}/${
+          TRACKS.length
+        }`;
         el.streakPill.textContent = `連続正解: ${streak}`;
       }
 
