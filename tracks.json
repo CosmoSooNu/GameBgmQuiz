@@ -560,7 +560,13 @@
   {
     "game": "スーパーマリオ64",
     "title": "さむいさむいマウンテン",
-    "src": "audio/Snow Mountainmp3",
+    "src": "audio/Snow Mountain.mp3",
     "volume": 0.4
+  },
+  {
+    "game": "まもるクンは呪われてしまった！",
+    "title": "YO-KAI Disco",
+    "src": "audio/YO-KAI Disco (Hell's Entrance World).mp3",
+    "volume": 0.5
   }
 ]
