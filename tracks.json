@@ -242,7 +242,7 @@
   {
     "game": "塊魂",
     "title": "ステキ星のさんぽはステキ",
-    "src": "audio/Walking on a Star!.mp3",
+    "src": "audio/Walking on a Star.mp3",
     "volume": 0.5
   },
   {
@@ -561,7 +561,7 @@
     "game": "スーパーマリオ64",
     "title": "さむいさむいマウンテン",
     "src": "audio/Snow Mountain.mp3",
-    "volume": 0.4
+    "volume": 0.5
   },
   {
     "game": "まもるクンは呪われてしまった！",
