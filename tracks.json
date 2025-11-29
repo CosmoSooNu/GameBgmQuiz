@@ -61,8 +61,8 @@
   },
   {
     "game": "星のカービィ64",
-    "title": "ボス",
-    "src": "audio/Boss.mp3",
+    "title": "とるとるバトル",
+    "src": "audio/Bumper Crop Bump.mp3",
     "volume": 0.4
   },
   {
@@ -204,18 +204,6 @@
     "volume": 0.7
   },
   {
-    "game": "ポケモン不思議のダンジョン 時の探検隊・闇の探検隊",
-    "title": "ずっと わすれない……",
-    "src": "audio/Farther Away.mp3",
-    "volume": 0.3
-  },
-  {
-    "game": "ポケモン不思議のダンジョン 空の探検隊",
-    "title": "あさひのなかで",
-    "src": "audio/In the Morning Sun.mp3",
-    "volume": 0.3
-  },
-  {
     "game": "カエルの為に鐘は鳴る",
     "title": "王子の冒険",
     "src": "audio/The Prince's Adventure.mp3",
@@ -253,9 +241,9 @@
   },
   {
     "game": "塊魂",
-    "title": "Wanda Wanda",
-    "src": "audio/Wanda Wanda.mp3",
-    "volume": 0.6
+    "title": "ステキ星のさんぽはステキ",
+    "src": "audio/Walking on a Star!.mp3",
+    "volume": 0.5
   },
   {
     "game": "大乱闘スマッシュブラザーズ64",
@@ -502,5 +490,77 @@
     "title": "モノ子",
     "src": "audio/Monoko.mp3",
     "volume": 0.5
+  },
+  {
+    "game": "遊戯王 デュエルリンクス",
+    "title": "ジャックアトラスのテーマ",
+    "src": "audio/Jack Atlas Theme.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ラチェット&クランク3 突撃!ガラクチックレンジャーズ",
+    "title": "惑星ケルバン",
+    "src": "audio/Metropolis [Planet Kerwan].mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "ロックマン2 Dr.ワイリーの謎",
+    "title": "CRASHMAN STAGE",
+    "src": "audio/Crashman Stage.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ロックマン3 Dr.ワイリーの最期!?",
+    "title": "SNAKEMAN STAGE",
+    "src": "audio/Snakeman Stage.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "神業-KAMIWAZA-",
+    "title": "枕石漱流",
+    "src": "audio/Washing Currents Of Pillow Stones.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "マリオパーティ2",
+    "title": "あおぞらのかなたへ",
+    "src": "audio/The Blue Skies Yonder.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "マリオパーティ4",
+    "title": "ゆかいにドタバタ",
+    "src": "audio/Loud and Sweet.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ポイズンピンク",
+    "title": "「クールにキメてくれ」",
+    "src": "audio/Decide in a Cool Way.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "たまごっちのプチプチおみせっち",
+    "title": "まめっち(しごと)",
+    "src": "audio/Mame Work.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "クビナシリコレクション",
+    "title": "外の世界 SCENE2",
+    "src": "audio/外の世界 SCENE2.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "Changed",
+    "title": "The Shark",
+    "src": "audio/The Shark.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "スーパーマリオ64",
+    "title": "さむいさむいマウンテン",
+    "src": "audio/Snow Mountainmp3",
+    "volume": 0.4
   }
 ]

@@ -389,6 +389,9 @@
       // 再生が止まったときにノリノリを解除
       el.player.addEventListener("pause", () => {
         el.trackTitle.classList.remove("playing");
+        el.player.pause();
+        el.btnPause.disabled = true;
+        el.btnPlay.disabled = false;
       });
       el.player.addEventListener("ended", () => {
         el.trackTitle.classList.remove("playing");
