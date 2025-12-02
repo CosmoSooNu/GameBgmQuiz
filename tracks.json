@@ -517,8 +517,8 @@
   },
   {
     "game": "神業-KAMIWAZA-",
-    "title": "枕石漱流",
-    "src": "audio/Washing Currents Of Pillow Stones.mp3",
+    "title": "追手",
+    "src": "audio/Pursuer.mp3",
     "volume": 0.3
   },
   {
@@ -567,6 +567,30 @@
     "game": "まもるクンは呪われてしまった！",
     "title": "YO-KAI Disco",
     "src": "audio/YO-KAI Disco (Hell's Entrance World).mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "エッグモンスターHERO",
+    "title": "ボス戦",
+    "src": "audio/エッグモンスターHEROボス戦.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "俺の屍を越えてゆけ2",
+    "title": "奉納試合",
+    "src": "audio/奉納試合.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "戦国BASARA4",
+    "title": "島左近のテーマ",
+    "src": "audio/島左近のテーマ.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "もぎたてチンクルのばら色ルッピーランド",
+    "title": "バトル ピエロ",
+    "src": "audio/Clown-Battle.wav",
     "volume": 0.5
   }
 ]
