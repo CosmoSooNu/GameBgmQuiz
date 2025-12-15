@@ -53,7 +53,7 @@
         padding: 18px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
         min-width: 880px;
-        min-height: 385px;
+        min-height: 450px;
         display: flex;
         flex-direction: column;
       }
@@ -249,7 +249,7 @@
   <body>
     <div class="wrap">
       <header>
-        <h1>♪ ゲーム音楽 4択クイズ</h1>
+        <h1>♪ ゲーム音楽 クイズ</h1>
         <div class="score">
           <span class="pill" id="progressPill">0 / 0</span>
           <span class="pill" id="streakPill">連続正解: 0</span>
@@ -405,7 +405,7 @@
         el.choices.innerHTML = "";
         const allGames = uniq(TRACKS.map((t) => t.game));
         const exclude = new Set([correctTrack.game]);
-        const others = sampleUnique(allGames, 3, exclude);
+        const others = sampleUnique(allGames, 5, exclude);
         const items = shuffle([correctTrack.game, ...others]);
 
         for (const gameTitle of items) {

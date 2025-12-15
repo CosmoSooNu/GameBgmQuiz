@@ -7,9 +7,21 @@
   },
   {
     "game": "真・三國無双 4",
-    "title": "合肥の戦い -Great Red Spirit-",
+    "title": "合肥の戦い -GREAT RED SPIRIT-",
     "src": "audio/Great Red Spirit.mp3",
     "volume": 0.4
+  },
+  {
+    "game": "真・三國無双 7",
+    "title": "合肥の戦い -CYCLONIZED TYPHOON-",
+    "src": "audio/CYCLONIZED TYPHOON (Battle of Hefei).mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "真・三國無双 7 猛将伝",
+    "title": "長安奪還戦 -STRENGTH,WEAKNESS-",
+    "src": "audio/STRENGTH WEAKNESS (Recapture of Chang'an).mp3",
+    "volume": 0.45
   },
   {
     "game": "ポケットモンスター プラチナ",
@@ -31,8 +43,8 @@
   },
   {
     "game": "ポケットモンスター スカーレット・バイオレット",
-    "title": "戦闘！ペパー",
-    "src": "audio/Battle! (Arven).mp3",
+    "title": "戦闘！スター団ボス",
+    "src": "audio/Battle! (Team Star Boss).mp3",
     "volume": 0.3
   },
   {
@@ -138,6 +150,12 @@
     "volume": 0.7
   },
   {
+    "game": "東方紅魔郷",
+    "title": "おてんば恋娘",
+    "src": "audio/おてんば恋娘.mp3",
+    "volume": 0.5
+  },
+  {
     "game": "東方永夜抄",
     "title": "蠢々秋月～Mooned Insect",
     "src": "audio/Mooned Insect.mp3",
@@ -187,9 +205,9 @@
   },
   {
     "game": "ゼルダの伝説 ムジュラの仮面",
-    "title": "デクナッツの城",
-    "src": "audio/Deku Palace.mp3",
-    "volume": 0.7
+    "title": "ゴロンレース",
+    "src": "audio/Goron Race.mp3",
+    "volume": 0.6
   },
   {
     "game": "ゼルダの伝説 風のタクト",
@@ -300,7 +318,7 @@
     "volume": 0.35
   },
   {
-    "game": "ドラゴンクエスト8 空と海と大地と呪われし姫君",
+    "game": "ドラゴンクエストⅧ 空と海と大地と呪われし姫君",
     "title": "おおぞらに戦う",
     "src": "audio/Battle in the Heavens.mp3",
     "volume": 0.6
@@ -519,13 +537,13 @@
     "game": "神業-KAMIWAZA-",
     "title": "追手",
     "src": "audio/Pursuer.mp3",
-    "volume": 0.3
+    "volume": 0.4
   },
   {
     "game": "マリオパーティ2",
     "title": "あおぞらのかなたへ",
     "src": "audio/The Blue Skies Yonder.mp3",
-    "volume": 0.5
+    "volume": 0.6
   },
   {
     "game": "マリオパーティ4",
@@ -588,9 +606,99 @@
     "volume": 0.5
   },
   {
+    "game": "戦国BASARA3",
+    "title": "最上義光のテーマ",
+    "src": "audio/Yoshiaki Mogami's Theme.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "戦国BASARA3 宴",
+    "title": "猿飛佐助のテーマ",
+    "src": "audio/Sasuke Sarutobi's Theme.mp3",
+    "volume": 0.4
+  },
+  {
     "game": "もぎたてチンクルのばら色ルッピーランド",
     "title": "バトル ピエロ",
     "src": "audio/Clown-Battle.wav",
     "volume": 0.5
+  },
+  {
+    "game": "勇者ヤマダくん",
+    "title": "ハラヘリ冒険者出陣!",
+    "src": "audio/Hungry Questers.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "Anodyne",
+    "title": "Challenge",
+    "src": "audio/Challenge.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "星のカービィ 参上!ドロッチェ団",
+    "title": "ドロッチェ団のテーマ",
+    "src": "audio/Squeak Squad Appears.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "MochiMochi",
+    "title": "Chocolate",
+    "src": "audio/Mere Notilde - MochiMochi (OST) - 05 Chocolate.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ハースストーン",
+    "title": "Pull Up a Chair",
+    "src": "audio/Pull Up a Chair.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "バトルネットワーク ロックマンエグゼ3",
+    "title": "FINAL TRANSMISSION",
+    "src": "audio/FINAL TRANSMISSION.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "リズム天国",
+    "title": "ナイトウォーク",
+    "src": "audio/Night Walk.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "龍が如く2",
+    "title": "Evil Itself",
+    "src": "audio/Evil Itself.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ワリオランドアドバンス ヨーキのお宝",
+    "title": "Hurry Up!",
+    "src": "audio/Hurry Up!.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "カービィのエアライド",
+    "title": "ウエライド：草",
+    "src": "audio/Top Ride - Grass.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "ゼルダの伝説 トワイライトプリンセス",
+    "title": "マロマート",
+    "src": "audio/Malo Mart.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "タッチ！カービィ",
+    "title": "マッドメカニズム",
+    "src": "audio/Mad Mechanism.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ドラゴンクエストX 目覚めし五つの種族",
+    "title": "刃の旋律",
+    "src": "audio/刃の旋律.mp3",
+    "volume": 1.0
   }
 ]
