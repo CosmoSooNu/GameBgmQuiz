@@ -345,13 +345,13 @@
     "game": "マリオカートDS",
     "title": "ワルイージピンボール",
     "src": "audio/DS Waluigi Pinball.mp3",
-    "volume": 0.3
+    "volume": 0.4
   },
   {
     "game": "マリオカートWii",
-    "title": "ココナッツモール",
-    "src": "audio/Coconut Mall.mp3",
-    "volume": 0.45
+    "title": "ワリオこうざん",
+    "src": "audio/Wario's Gold Mine.mp3",
+    "volume": 0.5
   },
   {
     "game": "学校であった怖い話",
@@ -591,7 +591,7 @@
     "game": "エッグモンスターHERO",
     "title": "ボス戦",
     "src": "audio/エッグモンスターHEROボス戦.mp3",
-    "volume": 0.5
+    "volume": 0.4
   },
   {
     "game": "俺の屍を越えてゆけ2",
@@ -663,7 +663,7 @@
     "game": "リズム天国",
     "title": "ナイトウォーク",
     "src": "audio/Night Walk.mp3",
-    "volume": 0.5
+    "volume": 0.4
   },
   {
     "game": "龍が如く2",
@@ -700,5 +700,95 @@
     "title": "刃の旋律",
     "src": "audio/刃の旋律.mp3",
     "volume": 1.0
+  },
+  {
+    "game": "星のカービィ スーパーデラックス",
+    "title": "バトルウィンドウズ戦",
+    "src": "audio/Computer Virus Battle.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "マリオ＆ルイージRPG",
+    "title": "お手並み拝見！",
+    "src": "audio/Come On!.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "スーパーペーパーマリオ",
+    "title": "いっくドーーーン!!",
+    "src": "audio/Ready, Go! (O'Chunks Battle).mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ストリートファイターIV",
+    "title": "Theme of Zangief -SFIV Arrange-",
+    "src": "audio/Theme of Zangief - Dread! Vacuum Man! (SFIV Arrange).mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ロマンシングサガ2",
+    "title": "バトル1",
+    "src": "audio/Romancing Saga2 [Battle].mp3",
+    "volume": 0.8
+  },
+  {
+    "game": "Beastieball",
+    "title": "VS. The Rutile All-Stars",
+    "src": "audio/VS. The Rutile All-Stars.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "アルタ",
+    "title": "烈華の女神",
+    "src": "audio/Blazing Flower Goddess.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ロックマンX2 ソウルイレイザー",
+    "title": "ランチャー・オクトパルド ステージ",
+    "src": "audio/Launch Octopus Stage.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ヨッシーの万有引力",
+    "title": "速いの大好き精霊",
+    "src": "audio/Tale of the Spirit of Speed.mp3",
+    "volume": 0.8
+  },
+  {
+    "game": "ラチェット&クランク",
+    "title": "ホバーボードレース",
+    "src": "audio/Hoverboard Race.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ラチェット&クランク2 ガガガ!銀河のコマンドーっす",
+    "title": "チェーンブレード&B2ブロウラー戦",
+    "src": "audio/Boss Battle - Chainblade & B2 Brawler.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ちびロボ!",
+    "title": "行け！宇宙刑事ギッチョマン",
+    "src": "audio/Go! Space Detective Drake Redcrest.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ゼルダの伝説 夢をみる島",
+    "title": "タルタル山脈",
+    "src": "audio/Tal Tal Mountain Range.mp3",
+    "volume": 1.0
+  },
+  {
+    "game": "絶対音感オトダマスター",
+    "title": "ノイズセクステット戦",
+    "src": "audio/noise sextet.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "デュアルハーツ",
+    "title": "バトル1",
+    "src": "audio/Battle Theme 1.mp3",
+    "volume": 0.4
   }
 ]

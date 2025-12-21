@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ゲーム音楽 4択クイズ</title>
+    <title>ゲーム音楽 クイズ</title>
     <style>
       :root {
         --bg: #0b0f14;
@@ -229,7 +229,7 @@
 
       .fly-image {
         position: fixed;
-        max-width: 100px;
+        width: auto;
         height: 100px;
         pointer-events: none;
         z-index: 9999;
@@ -522,8 +522,7 @@
           else el.btnPause.click();
         }
         if (e.key.toLowerCase() === "n") el.btnNext.click();
-        if (e.key.toLowerCase() === "p") el.btnPrev.click();
-        if (/^[1-4]$/.test(e.key)) {
+        if (/^[1-6]$/.test(e.key)) {
           const idx = Number(e.key) - 1;
           const b = qsa(".choice")[idx];
           if (b) b.click();
