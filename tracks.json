@@ -48,12 +48,6 @@
     "volume": 0.3
   },
   {
-    "game": "戦国無双 3",
-    "title": "桜花 -小牧長久手-",
-    "src": "audio/Cherry Blossom -Komaki-Nagakute-.mp3",
-    "volume": 0.3
-  },
-  {
     "game": "マリオストーリー",
     "title": "Petunia Under Attack!",
     "src": "audio/Petunia Under Attack!.mp3",
@@ -168,9 +162,15 @@
     "volume": 0.35
   },
   {
-    "game": "ダンガンロンパ",
+    "game": "ダンガンロンパ 希望の学園と絶望の高校生",
     "title": "議論-BREAK-",
     "src": "audio/Debate -BREAK-.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "スーパーダンガンロンパ2 さよなら絶望学園",
+    "title": "反論 -CROSS SWORD-",
+    "src": "audio/Argument - Cross Sword.mp3",
     "volume": 0.3
   },
   {
@@ -253,9 +253,9 @@
   },
   {
     "game": "ビブリボン",
-    "title": "Going On",
-    "src": "audio/Going On.mp3",
-    "volume": 0.4
+    "title": "Oops!",
+    "src": "audio/Oops!.mp3",
+    "volume": 0.5
   },
   {
     "game": "塊魂",
@@ -345,7 +345,7 @@
     "game": "マリオカートDS",
     "title": "ワルイージピンボール",
     "src": "audio/DS Waluigi Pinball.mp3",
-    "volume": 0.4
+    "volume": 0.3
   },
   {
     "game": "マリオカートWii",
@@ -358,12 +358,6 @@
     "title": "新堂誠",
     "src": "audio/Shindo Makoto.mp3",
     "volume": 0.65
-  },
-  {
-    "game": "エストポリス伝記II",
-    "title": "バトル#3",
-    "src": "audio/Battle theme 3.mp3",
-    "volume": 0.6
   },
   {
     "game": "トライアングルストラテジー",
@@ -408,12 +402,6 @@
     "volume": 0.45
   },
   {
-    "game": "ソニックマニア",
-    "title": "Lights, Camera, Action!",
-    "src": "audio/Studiopolis_Act_1.mp3",
-    "volume": 0.5
-  },
-  {
     "game": "クリプト・オブ・ネクロダンサー",
     "title": "Konga Conga Kappa",
     "src": "audio/Konga Conga Kappa.mp3",
@@ -428,8 +416,8 @@
   {
     "game": "ワンス・アポン・ア・塊魂",
     "title": "カタマリイズム",
-    "src": "audio/Katamariism (instrumental version).mp3",
-    "volume": 0.5
+    "src": "audio/Katamariism.mp3",
+    "volume": 0.4
   },
   {
     "game": "ファンタジーゾーン",
@@ -552,12 +540,6 @@
     "volume": 0.4
   },
   {
-    "game": "ポイズンピンク",
-    "title": "「クールにキメてくれ」",
-    "src": "audio/Decide in a Cool Way.mp3",
-    "volume": 0.5
-  },
-  {
     "game": "たまごっちのプチプチおみせっち",
     "title": "まめっち(しごと)",
     "src": "audio/Mame Work.mp3",
@@ -585,19 +567,13 @@
     "game": "まもるクンは呪われてしまった！",
     "title": "YO-KAI Disco",
     "src": "audio/YO-KAI Disco (Hell's Entrance World).mp3",
-    "volume": 0.5
+    "volume": 0.4
   },
   {
     "game": "エッグモンスターHERO",
     "title": "ボス戦",
     "src": "audio/エッグモンスターHEROボス戦.mp3",
     "volume": 0.4
-  },
-  {
-    "game": "俺の屍を越えてゆけ2",
-    "title": "奉納試合",
-    "src": "audio/奉納試合.mp3",
-    "volume": 0.5
   },
   {
     "game": "戦国BASARA4",
@@ -615,7 +591,7 @@
     "game": "戦国BASARA3 宴",
     "title": "猿飛佐助のテーマ",
     "src": "audio/Sasuke Sarutobi's Theme.mp3",
-    "volume": 0.4
+    "volume": 0.35
   },
   {
     "game": "もぎたてチンクルのばら色ルッピーランド",
@@ -708,7 +684,7 @@
     "volume": 0.7
   },
   {
-    "game": "マリオ＆ルイージRPG",
+    "game": "マリオ&ルイージRPG",
     "title": "お手並み拝見！",
     "src": "audio/Come On!.mp3",
     "volume": 0.4
@@ -729,7 +705,7 @@
     "game": "ロマンシングサガ2",
     "title": "バトル1",
     "src": "audio/Romancing Saga2 [Battle].mp3",
-    "volume": 0.8
+    "volume": 0.9
   },
   {
     "game": "Beastieball",
@@ -789,6 +765,126 @@
     "game": "デュアルハーツ",
     "title": "バトル1",
     "src": "audio/Battle Theme 1.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "おいでよ どうぶつの森",
+    "title": "ユーロビート",
+    "src": "audio/DJ K.K. (Radio).mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "街へいこうよ どうぶつの森",
+    "title": "テクノビート",
+    "src": "audio/K.K. Technopop (Radio).mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "Vampire Survivors",
+    "title": "Forest Night Fever",
+    "src": "audio/Forest Night Fever.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ゲームセンターCX 有野の挑戦状",
+    "title": "からくり忍者ハグルマン2",
+    "src": "audio/HaguruMan2.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "ストレイチルドレン",
+    "title": "ジャンボフラッペ戦",
+    "src": "audio/Penguin Battle.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "メダロット弐CORE",
+    "title": "メダロッターズ",
+    "src": "audio/メダロッターズ.mp3",
     "volume": 0.4
+  },
+  {
+    "game": "モンスターファームアドバンス2",
+    "title": "バトル",
+    "src": "audio/MFA2_battle.mp3",
+    "volume": 0.9
+  },
+  {
+    "game": "nintendogs",
+    "title": "お風呂",
+    "src": "audio/Bathing - Dirty.mp3",
+    "volume": 1.0
+  },
+  {
+    "game": "悪魔城ドラキュラ",
+    "title": "Vampire Killer",
+    "src": "audio/Vampire Killer.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "サンリオタイムネット",
+    "title": "バトル3 ごかく",
+    "src": "audio/バトル3 ごかく.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "北海道連鎖殺人 オホーツクに消ゆ",
+    "title": "追跡",
+    "src": "audio/Pursuit (Endgame Change Location Mombetsu ~ Etc.).mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ショベルナイト",
+    "title": "The Alchemist's Haven",
+    "src": "audio/The Alchemist's Haven.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "くるりんパラダイス",
+    "title": "ひみつの国",
+    "src": "audio/Neo Land.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "マリオテニスGC",
+    "title": "ピーチドームコート",
+    "src": "audio/Peach Dome Court - Exhibition.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ゼルダの伝説 ティアーズ オブ ザ キングダム",
+    "title": "帰ってきたコーガ様戦",
+    "src": "audio/The Return of Master Kohga Battle.mp3",
+    "volume": 0.35
+  },
+  {
+    "game": "第3次スーパーロボット大戦Z 時獄篇",
+    "title": "瞳の中の明日",
+    "src": "audio/Tomorrow in Sight.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "スーパーロボット大戦V",
+    "title": "ザ・リターナー",
+    "src": "audio/The Returner.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "みんなのGOLF4",
+    "title": "パットゴルフ上級",
+    "src": "audio/Expert Mini Putt.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "スーパーマリオメーカー",
+    "title": "エディット(地上):スーパーマリオワールド",
+    "src": "audio/Super Mario World - Ground (Edit).mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "マリオのスーパーピクロス",
+    "title": "ワリオのスーパーピクロス:BGM1",
+    "src": "audio/Wario BGM 1.mp3",
+    "volume": 0.6
   }
 ]
