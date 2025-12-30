@@ -885,6 +885,48 @@
     "game": "マリオのスーパーピクロス",
     "title": "ワリオのスーパーピクロス:BGM1",
     "src": "audio/Wario BGM 1.mp3",
-    "volume": 0.6
+    "volume": 0.7
+  },
+  {
+    "game": "スライムもりもりドラゴンクエスト 衝撃のしっぽ団",
+    "title": "スライムは行く",
+    "src": "audio/Blue Skies, Blue Slime.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "スライムもりもりドラゴンクエスト2 大戦車としっぽ団",
+    "title": "勇車バトル",
+    "src": "audio/Tank Battle.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ワリオワールド",
+    "title": "オジケルーマン戦",
+    "src": "audio/Mean Emcee.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "大逆転裁判 -成歩堂龍ノ介の冒險-",
+    "title": "大尋問 ～アレグロ",
+    "src": "audio/Great Cross-Examination - Allegro.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "Inscryption",
+    "title": "The Scrybe of Magicks",
+    "src": "audio/The Scrybe of Magicks.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ラクガキ王国2 魔王城の戦い",
+    "title": "永劫回帰",
+    "src": "audio/永劫回帰.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "侍 ～SAMURAI～",
+    "title": "小諍い",
+    "src": "audio/Small Quarrels.mp3",
+    "volume": 0.4
   }
 ]
