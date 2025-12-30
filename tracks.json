@@ -885,7 +885,7 @@
     "game": "マリオのスーパーピクロス",
     "title": "ワリオのスーパーピクロス:BGM1",
     "src": "audio/Wario BGM 1.mp3",
-    "volume": 0.7
+    "volume": 0.8
   },
   {
     "game": "スライムもりもりドラゴンクエスト 衝撃のしっぽ団",
@@ -927,6 +927,54 @@
     "game": "侍 ～SAMURAI～",
     "title": "小諍い",
     "src": "audio/Small Quarrels.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "Slay the Spire",
+    "title": "Battle With The Champ",
+    "src": "audio/Battle With the Champ.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "イース7",
+    "title": "An Assault",
+    "src": "audio/An Assault.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "Wii Fit",
+    "title": "踏み台ダンス",
+    "src": "audio/Step Dance.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "大神",
+    "title": "イダテンと競争",
+    "src": "audio/Competition With Idaten.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "俺の屍を越えてゆけ",
+    "title": "死闘",
+    "src": "audio/死闘.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ジョジョの奇妙な冒険 オールスターバトル",
+    "title": "メギャン",
+    "src": "audio/MEGYAN.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ゼルダの伝説 ふしぎのぼうし",
+    "title": "雲の上",
+    "src": "audio/Cloud Tops.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "戦国無双4",
+    "title": "厳島（毛利）",
+    "src": "audio/Itsukushima (Mōri).mp3",
     "volume": 0.4
   }
 ]
