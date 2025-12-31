@@ -976,5 +976,47 @@
     "title": "厳島（毛利）",
     "src": "audio/Itsukushima (Mōri).mp3",
     "volume": 0.4
+  },
+  {
+    "game": "DARK SOULS: REMASTERED",
+    "title": "Ornstein & Smough",
+    "src": "audio/Ornstein & Smough.mp3",
+    "volume": 0.3
+  },
+  {
+    "game": "大乱闘スマッシュブラザーズX",
+    "title": "オンライン練習ステージ",
+    "src": "audio/Online Practice Stage.mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ファイアーエムブレム 封印の剣",
+    "title": "あの空の向こうに（ロイの旅立ち）",
+    "src": "audio/Beyond the Sky (Roy's Departure).mp3",
+    "volume": 0.4
+  },
+  {
+    "game": "ファイアーエムブレム 烈火の剣",
+    "title": "すべてが闇へ",
+    "src": "audio/Everything into the Dark.mp3",
+    "volume": 0.5
+  },
+  {
+    "game": "ファイアーエムブレム 聖魔の光石",
+    "title": "真実 絶望 そして希望",
+    "src": "audio/Truth, Despair, and Hope.mp3",
+    "volume": 0.7
+  },
+  {
+    "game": "ファイナルファンタジーV",
+    "title": "ビッグブリッヂの死闘",
+    "src": "audio/ビッグブリッヂの死闘.mp3",
+    "volume": 0.6
+  },
+  {
+    "game": "ファンタシースターポータブル2",
+    "title": "More haste, less speed.",
+    "src": "audio/More haste, less speed.mp3",
+    "volume": 0.5
   }
 ]
